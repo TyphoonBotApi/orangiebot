@@ -12,11 +12,6 @@ client.on('message', message => {
   	}
 });
     
-client.on('message', message => {
-   if (message.content.includes("T series")) {
-      message.channel.send('T series aint nothing but a....');
-   }
-});
 
 client.on('message', message => {
    if (message.content.startsWith("why")) {
