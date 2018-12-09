@@ -18,24 +18,6 @@ client.on('message', message => {
    }
 });
 
-client.on('message', message => {
-   if (message.content.startsWith("run node.js")) {
-      message.channel.send('**Orangie 1.0 start up run branch?');
-   }
-});
-
-client.on('message', message => {
-   if (message.content.startsWith("master,web==off,worker==on")) {
-      message.channel.send('Confirm Branch "master"?');
-   }
-});
-
-client.on('message', message => {
-   if (message.content.startsWith("confirm")) {
-      message.channel.send('Repo boot up');
-   }
-});
-
 
 client.on('message', message => {
    if (message.content.startsWith("Why")) {
