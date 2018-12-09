@@ -5,11 +5,6 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
-   if (message.content.startsWith("ping")) {
-    return this.pings.reduce((prev, p) => prev + p, 0) / this.pings.length;
-  }
-
 
 client.on('message', message => {
     if (message.content === '!info') {
